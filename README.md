@@ -182,10 +182,6 @@ SwiftChain-Frontend/
 
 2.  **Install dependencies:**
     ```bash
-    npm install
-    # or
-    yarn install
-    # or
     pnpm install
     ```
 
