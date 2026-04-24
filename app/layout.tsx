@@ -1,4 +1,5 @@
 import './global.css';
+import OfflineBanner from '@/components/wallet/ui/OfflineBanner';
 
 export const metadata = {
   title: 'SwiftChain',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <OfflineBanner />
+        {children}
+      </body>
     </html>
   );
 }
