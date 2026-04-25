@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/solenoid/Documents/Development/Personal/drips-04/SwiftChain_Frontend/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <main>\n      <h1>Welcome to SwiftChain</h1>\n      <p>Decentralized Logistics & Escrow Delivery Platform</p>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,4TAAC;;0BACC,4TAAC;0BAAG;;;;;;0BACJ,4TAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
-}
