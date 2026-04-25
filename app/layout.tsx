@@ -1,6 +1,6 @@
 import './global.css';
-import { ThemeProvider } from 'next-themes';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { Providers } from './providers';
 
 export const metadata = {
   title: 'SwiftChain',
@@ -15,12 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <Providers>
           <div className="fixed right-4 top-4 z-50">
             <ThemeToggle />
           </div>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
