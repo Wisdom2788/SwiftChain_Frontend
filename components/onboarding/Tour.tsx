@@ -4,7 +4,8 @@ import Joyride from 'react-joyride';
 import { useOnboardingTour } from '@/hooks/useOnboardingTour';
 
 export function Tour() {
-  const { run, stepIndex, steps, onJoyrideEvent, skipTour } = useOnboardingTour();
+  const { run, stepIndex, steps, onJoyrideEvent, skipTour } =
+    useOnboardingTour();
 
   return (
     <Joyride

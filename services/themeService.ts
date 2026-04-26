@@ -15,17 +15,17 @@ interface ThemePreferenceResponse {
 export const themeService = {
   async getThemePreference(): Promise<ThemePreferenceResponse> {
     const { data } = await axios.get<ThemePreferenceResponse>(
-      `${API_BASE_URL}/api/user/preferences/theme`,
+      `${API_BASE_URL}/api/user/preferences/theme`
     );
     return data;
   },
 
   async saveThemePreference(
-    theme: ThemePreference,
+    theme: ThemePreference
   ): Promise<ThemePreferenceResponse> {
     const { data } = await axios.post<ThemePreferenceResponse>(
       `${API_BASE_URL}/api/user/preferences/theme`,
-      { theme },
+      { theme }
     );
     return data;
   },

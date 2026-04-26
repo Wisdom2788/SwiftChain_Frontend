@@ -64,7 +64,7 @@ describe('useTheme', () => {
 
   it('should not throw when persistence fails', async () => {
     (themeService.saveThemePreference as jest.Mock).mockRejectedValueOnce(
-      new Error('Persistence failed'),
+      new Error('Persistence failed')
     );
 
     const { result } = renderHook(() => useTheme());
@@ -72,7 +72,7 @@ describe('useTheme', () => {
     await expect(
       act(async () => {
         await result.current.toggleTheme();
-      }),
+      })
     ).resolves.toBeUndefined();
 
     expect(mockSetTheme).toHaveBeenCalledWith('dark');

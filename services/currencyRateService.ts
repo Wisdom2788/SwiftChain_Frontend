@@ -14,7 +14,7 @@ export const currencyRateService = {
       `${API_BASE_URL}/api/rates/xlm`,
       {
         params: { fiat },
-      },
+      }
     );
 
     if (
