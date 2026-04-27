@@ -12,7 +12,8 @@ export function useOnboardingTour() {
     () => [
       {
         target: '[data-tour="dashboard-title"]',
-        content: 'Welcome to your dashboard. This area gives you a quick overview.',
+        content:
+          'Welcome to your dashboard. This area gives you a quick overview.',
         disableBeacon: true,
       },
       {
@@ -28,7 +29,7 @@ export function useOnboardingTour() {
         content: 'Create a new delivery from this section when you are ready.',
       },
     ],
-    [],
+    []
   );
 
   useEffect(() => {
@@ -72,7 +73,9 @@ export function useOnboardingTour() {
       if (type === EVENTS.STEP_AFTER) {
         const nextStepIndex = action === 'prev' ? index - 1 : index + 1;
         const normalizedNextStepIndex =
-          nextStepIndex >= 0 && nextStepIndex < steps.length ? nextStepIndex : 0;
+          nextStepIndex >= 0 && nextStepIndex < steps.length
+            ? nextStepIndex
+            : 0;
 
         setStepIndex(normalizedNextStepIndex);
         onboardingTourService.saveTourState({
@@ -81,7 +84,7 @@ export function useOnboardingTour() {
         });
       }
     },
-    [completeTour, steps.length],
+    [completeTour, steps.length]
   );
 
   return {

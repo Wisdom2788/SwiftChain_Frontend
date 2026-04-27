@@ -37,7 +37,7 @@ export function useTheme() {
         // Persist failure should not block UI theme switch.
       }
     },
-    [setTheme],
+    [setTheme]
   );
 
   const toggleTheme = useCallback(async (): Promise<void> => {

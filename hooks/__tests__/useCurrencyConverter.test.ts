@@ -22,7 +22,11 @@ describe('useCurrencyConverter', () => {
     });
 
     return function Wrapper({ children }: { children: React.ReactNode }) {
-      return createElement(QueryClientProvider, { client: queryClient }, children);
+      return createElement(
+        QueryClientProvider,
+        { client: queryClient },
+        children
+      );
     };
   };
 
@@ -78,7 +82,7 @@ describe('useCurrencyConverter', () => {
 
   it('handles API errors with graceful fallback state', async () => {
     (currencyRateService.getXlmRate as jest.Mock).mockRejectedValue(
-      new Error('Rate API unavailable'),
+      new Error('Rate API unavailable')
     );
 
     const { result } = renderHook(() => useCurrencyConverter(), {

@@ -20,7 +20,9 @@ export function CurrencyConverter() {
 
   return (
     <section className="mt-6 rounded-lg border border-secondary/30 p-4">
-      <h2 className="text-lg font-semibold">Cross-Border Fiat-to-XLM Preview</h2>
+      <h2 className="text-lg font-semibold">
+        Cross-Border Fiat-to-XLM Preview
+      </h2>
       <p className="mt-1 text-sm text-secondary">
         Enter your local amount to estimate the equivalent XLM in real time.
       </p>
